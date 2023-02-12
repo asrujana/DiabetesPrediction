@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-repeat: no-repeat;
+                 background-size: 100% 100% ; 
+                width: 1510px;
+                background-image: url('https://www.cdc.gov/diabetes/images/library/spotlights/diabetes-stats-report-724px.png?_=42420' );
+             
+            
+            }
+            
+        </style>
+        
+    </head>
+    <center>
+    <body>
+
+            <h1> DIABETES PREDICTION </h1>
+        <form action="{{url_for('predict')}}" method="post"  >
+            <h4>Enter pregnant : <input type="text"  name = "pregnant" placeholder=" pregnant " required="required" /></h4>
+            <h4>Enter glucose  : <input type="text"  name = "glucose" placeholder=" glucose" required="required" /></h4>
+            <h4>Enter insulin  : <input type="text"  name = "insulin" placeholder=" insulin " required="required" /></h4>
+            <h4>    Enter bmi      : <input type="text"  name = "bmi" placeholder=" bmi " required="required" /></h4>
+            <h4>    Enter age      : <input type="text"  name = "age" placeholder=" age " required="required" /></h4>
+            <h4>Enter bp      : <input type="text"  name = "bp" placeholder=" bp " required="required" /></h4>
+            <h4>Enter pedigree : <input type="text"  name = "pedigree" placeholder=" pedigree " required="required" /></h4>
+            
+             
+              <button id="btn" type="submit" class="btn">Predict</button>
+        </form>
+        
+       
+    </center>
+    </body>
+
+</html>
